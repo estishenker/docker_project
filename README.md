@@ -1,7 +1,11 @@
 # docker_project
 files:
 simple_file.py: simple code in python that print list "names" 
-Docker file - to create image is name "alpcon"
+Docker file: 
+  create image is name "alpcon"
+  from alpine:latest
+  and install python3
+  CMD "internal_script"
 script.sh:
   build container "alpcon" from Dockerfile
   check if "alpcon" is running else start it and create volume in local
